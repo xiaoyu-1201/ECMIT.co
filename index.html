@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMIT.co</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">品牌故事</a></li>
+            <li><a href="products.html">品牌商品</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="#" id="wishlist-link">願望清單</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to ECMIT.co</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="搜尋商品..." id="search-input">
+            <p id="no-results" style="display:none; color: red;">查無此商品</p>
+            <button type="button" onclick="searchProducts()">搜尋</button>
+        </div>
+    </header>
+    <main>
+        <section class="story-section">
+            <div class="story-image">
+                <img src="images/brand-story.jpg" alt="品牌故事圖片">
+            </div>
+            <div class="story-content">
+                <h2>我們的起點</h2>
+                <p>我們的旅程始於 2020 年，一群熱愛設計與創新的朋友聚在一起，決心打造高品質的商品。</p>
+                <h2>我們的理念</h2>
+                <p>堅持細節，追求卓越。每一件產品都訴說一個故事。</p>
+                <a href="products.html" class="story-button">探索我們的商品</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <h3>訂閱我們的電子報</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="email" name="email" placeholder="輸入您的 Email" required>
+                <button type="submit">訂閱</button>
+            </form>
+        </div>
+    </footer>
+    <div class="popup" id="promo-popup">
+        <div class="popup-content">
+            <h3>歡迎！首次訂單享 9 折</h3>
+            <p>輸入折扣碼：WELCOME10</p>
+            <button onclick="document.getElementById('promo-popup').style.display='none'">關閉</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Tawk.to 即時聊天 -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 - ECMIT.co</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">品牌故事</a></li>
+            <li><a href="products.html">品牌商品</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="#" id="wishlist-link">願望清單</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>聯絡我們</h1>
+        <p class="subtitle">有任何問題或建議？我們隨時在這裡為您服務！</p>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>聯絡方式</h2>
+                <p><strong>Email:</strong> <a href="mailto:xiaoyu.1201@icloud.com">xiaoyu.1201@icloud.com</a></p>
+                <p><strong>電話:</strong> 0988-424-455</p>
+                <p><strong>營業時間:</strong> 週一至週五 9:00 - 17:00</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.920970024305!2d121.56537491064178!3d25.03675593808855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab8a318947ad%3A0x4b61192cb2999d9a!2z6YGg5p2x55m-6LKoIOS_oee-qUExMw!5e0!3m2!1szh-TW!2stw!4v1741611664691!5m2!1szh-TW!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-form">
+                <h2>傳送訊息</h2>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="您的姓名" required>
+                    <label for="email">電子郵件</label>
+                    <input type="email" id="email" name="email" placeholder="您的電子郵件" required>
+                    <label for="message">訊息</label>
+                    <textarea id="message" name="message" placeholder="請輸入您的訊息" rows="5" required></textarea>
+                    <button type="submit">送出</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <!-- Tawk.to 即時聊天 -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+</body>
+</html>

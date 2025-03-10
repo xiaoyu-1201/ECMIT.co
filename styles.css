@@ -1,0 +1,405 @@
+/* body 樣式 */
+body {
+    font-family: 'Noto Sans TC', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 導航列樣式 */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* 導航列中的列表樣式 */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 導航列中的連結樣式 */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+/* 導航連結的懸停效果 */
+nav ul li a:hover {
+    color: #28a745;
+}
+
+/* 標頭樣式 */
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* 標頭中的主標題樣式 */
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+/* 副標題樣式 */
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* 主要內容區樣式 */
+main {
+    padding: 20px;
+}
+
+/* 搜尋列樣式 */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* 搜尋列中的輸入框樣式 */
+.search-bar input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 篩選區域樣式 */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+/* 商品容器樣式 */
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* 品牌故事和聯絡區樣式 */
+.story-section, .contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 品牌故事圖片樣式 */
+.story-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 故事內容、聯絡資訊和表單的最大寬度 */
+.story-content, .contact-info, .contact-form {
+    max-width: 500px;
+}
+
+/* 故事內容、聯絡資訊和表單的二級標題樣式 */
+.story-content h2, .contact-info h2, .contact-form h2 {
+    font-size: 24px;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* 故事內容和聯絡資訊的段落樣式 */
+.story-content p, .contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* 故事按鈕樣式 */
+.story-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* 故事按鈕懸停效果 */
+.story-button:hover {
+    background-color: #218838;
+}
+
+/* 聯絡資訊中的連結樣式 */
+.contact-info a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+/* 聯絡資訊連結懸停效果 */
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 聯絡資訊中的地圖框架樣式 */
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 聯絡表單的表單樣式 */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 聯絡表單的標籤樣式 */
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* 聯絡表單的輸入框和文字區域樣式 */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', Arial, sans-serif;
+}
+
+/* 聯絡表單的文字區域額外樣式 */
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* 聯絡表單的按鈕樣式 */
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+/* 聯絡表單按鈕懸停效果 */
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+/* 商品卡片樣式（舊版） */
+.product {
+    border: 1px solid #ddd; /* 邊框為 1px 實線，淺灰色 */
+    padding: 15px; /* 從 10px 增加到 15px，給更多內部空間 */
+    text-align: center; /* 文字置中 */
+    width: 220px; /* 從 200px 微調到 220px，適應圖片 */
+    margin: 15px; /* 從 10px 增加到 15px，卡片間距更大 */
+    min-height: 400px; /* 新增最小高度，容納圖片和內容 */
+}
+
+/* 商品卡片中的圖片樣式（舊版） */
+.product img {
+    width: 100%;
+}
+
+/* 加入願望清單按鈕樣式 */
+.add-to-wishlist {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* 加入願望清單按鈕懸停效果 */
+.add-to-wishlist:hover {
+    background-color: #218838;
+}
+
+/* 商品評論樣式 */
+.product-reviews {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 相關商品區域樣式 */
+.related-products {
+    margin-top: 10px;
+}
+
+/* 相關商品標題樣式 */
+.related-products h3 {
+    font-size: 16px;
+    color: #28a745;
+}
+
+/* 相關商品中的內嵌商品樣式 */
+.related-products .product {
+    display: inline-block;
+    margin: 5px;
+    width: auto;
+}
+
+/* 所有按鈕的預設樣式 */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* 所有按鈕的懸停效果 */
+button:hover {
+    background-color: #218838;
+}
+
+/* 購物車區域樣式 */
+#cart {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+}
+
+/* 商品圖片輪播區域樣式 */
+.image-gallery {
+    margin-bottom: 20px; /* 從 10px 增加到 20px，給縮圖留更多空間 */
+    position: relative; /* 相對定位，供內部元素（如按鈕）使用 */
+}
+
+/* 商品主要圖片樣式（不變） */
+.main-image {
+    width: 100%; /* 圖片寬度填滿容器，適應卡片寬度 */
+    height: auto; /* 高度自動，根據圖片比例調整 */
+    max-height: 300px; /* 最大高度 300px，避免過長 */
+    object-fit: contain; /* 完整顯示圖片，不裁切 */
+}
+
+/* 商品縮圖區域樣式 */
+.thumbnails {
+    display: flex; /* 使用 Flexbox 水平排列縮圖 */
+    justify-content: center; /* 縮圖置中 */
+    gap: 10px; /* 從 5px 增加到 10px，縮圖間距更舒適 */
+    margin-top: 10px; /* 從 5px 增加到 10px，與圖片分隔 */
+}
+
+/* 商品縮圖樣式 */
+.thumbnails img {
+    width: 45px;
+    height: 60px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* 商品縮圖懸停效果 */
+.thumbnails img:hover {
+    border: 2px solid #28a745;
+}
+
+/* 圖片輪播的左右箭頭樣式 */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* 左箭頭定位 */
+.prev { left: 5px; }
+
+/* 右箭頭定位 */
+.next { right: 5px; }
+
+/* 運費計算器樣式 */
+.shipping-calculator {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+/* 彈窗樣式 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* 彈窗內容樣式 */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 15% auto;
+    text-align: center;
+}
+
+/* 電子報訂閱區域樣式 */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* 電子報訂閱輸入框樣式 */
+.newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0;
+}
+
+.toast-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
